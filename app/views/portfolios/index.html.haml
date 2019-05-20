@@ -1,7 +1,7 @@
 .portfolio
   %header.portfolio__header
     %h1.portfolio__header__title
-      YUICHIRO's portfolio
+      Yuichiro Onuki's portfolio
     %nav.portfolio__header__nav
       %ul.portfolio__header__nav__list
         %li.portfolio__header__nav__list__profile
@@ -16,27 +16,163 @@
     .portfolio__main__profile
       %h2.portfolio__main__profile__title 
         profile
-      .portfolio__main__profile__icon
-      .portfolio__main__profile__text
-        大貫佑一郎と申します。
+      .portfolio__main__profile__box
+        .portfolio__main__profile__box__icon
+          = image_tag "my_icon.jpg", class: "portfolio__main__profile__box__icon__img"
+        .portfolio__main__profile__box__text
+          初めまして。大貫佑一郎と申します。
+          %br
+          現場監督として勤めていましたがエンジニアになるため退職。
+          %br
+          プログラミングスクールTECH::EXPERTに通い、
+          %br
+          70日間でおよそ800時間の猛勉強を経て現在転職活動中。
+          %br
+          将来は上流から下流までこなす、
+          %br
+          フルスタックエンジニアを目指しています。
+          %br
+          まだまだ駆け出しですが、
+          %br
+          時代の流れに沿って必要な技術を吸収し、
+          %br
+          お客様に喜ばれるサービスを、
+          %br
+          早く、正確に、安全に作るエンジニアになり
+          %br
+          IT業界の発展に貢献していきたいです。
     .portfolio__main__skill
       %h2.portfolio__main__skill__title
         skill
-      .portfolio__main__skill__front
-        フロントエンド
-      .portfolio__main__skill__back
-        バックエンド
-      .portfolio__main__skill__design
-        コーディング
-      .portfolio__main__skill__db
-        DB
-      .portfolio__main__skill__infrastracture
-        インフラ・サーバー
-      .portfolio__main__skill__others
-        その他
+      .portfolio__main__skill__box
+        .portfolio__main__skill__box__field
+          .portfolio__main__skill__box__field__title
+            フロントエンド
+          %ul.portfolio__main__skill__box__field__lang
+            言語
+            %li.portfolio__main__skill__box__field__lang__list
+              javascript
+            %li.portfolio__main__skill__box__field__lang__list
+              jQuery
+          %ul.portfolio__main__skill__box__field__period
+            経験年数
+            %li.portfolio__main__skill__box__field__period__list
+              １ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              １ヶ月
+        .portfolio__main__skill__box__field
+          .portfolio__main__skill__box__field__title
+            バックエンド
+          %ul.portfolio__main__skill__box__field__lang
+            言語
+            %li.portfolio__main__skill__box__field__lang__list
+              ruby(Ruby on Rails)
+          %ul.portfolio__main__skill__box__field__period
+            経験年数
+            %li.portfolio__main__skill__box__field__period__list
+              3ヶ月
+      .portfolio__main__skill__box
+        .portfolio__main__skill__box__field
+          .portfolio__main__skill__box__field__title
+            コーディング
+          %ul.portfolio__main__skill__box__field__lang
+            言語
+            %li.portfolio__main__skill__box__field__lang__list
+              HTML
+            %li.portfolio__main__skill__box__field__lang__list
+              css
+            %li.portfolio__main__skill__box__field__lang__list
+              haml
+            %li.portfolio__main__skill__box__field__lang__list
+              sass
+          %ul.portfolio__main__skill__box__field__period
+            経験年数
+            %li.portfolio__main__skill__box__field__period__list
+              1ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              1ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              1ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              1ヶ月
+        .portfolio__main__skill__box__field
+          .portfolio__main__skill__box__field__title
+            DB
+          %ul.portfolio__main__skill__box__field__lang
+            技術
+            %li.portfolio__main__skill__box__field__lang__list
+              MySQL
+            %li.portfolio__main__skill__box__field__lang__list
+              postgresql
+          %ul.portfolio__main__skill__box__field__period
+            経験年数
+            %li.portfolio__main__skill__box__field__period__list
+              3ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              10日
+      .portfolio__main__skill__box
+        .portfolio__main__skill__box__field
+          .portfolio__main__skill__box__field__title
+            インフラ・サーバー
+          %ul.portfolio__main__skill__box__field__lang
+            技術
+            %li.portfolio__main__skill__box__field__lang__list
+              AWS(EC2・S3)
+            %li.portfolio__main__skill__box__field__lang__list
+              heroku
+          %ul.portfolio__main__skill__box__field__period
+            経験年数
+            %li.portfolio__main__skill__box__field__period__list
+              1ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              10日
+        .portfolio__main__skill__box__field
+          .portfolio__main__skill__box__field__title
+            その他
+          %ul.portfolio__main__skill__box__field__lang
+            技術
+            %li.portfolio__main__skill__box__field__lang__list
+              git
+            %li.portfolio__main__skill__box__field__lang__list
+              slack
+          %ul.portfolio__main__skill__box__field__period
+            経験年数
+            %li.portfolio__main__skill__box__field__period__list
+              3ヶ月
+            %li.portfolio__main__skill__box__field__period__list
+              3ヶ月
     .portfolio__main__works
       %h2.portfolio__main__works__title
         works
-      .portfolio__main__works__mercari
-        メルカリ
-  %footer
+      .portfolio__main__works__field
+        .portfolio__main__works__field__box
+          .portfolio__main__works__field__box__img
+            = image_tag "portfolio.jpg", class: "portfolio__main__works__field__box__img__url"
+          .portfolio__main__works__field__box__title
+            ポートフォリオ
+        .portfolio__main__works__field__box
+          .portfolio__main__works__field__box__img
+            = image_tag "freemarket.png", class: "portfolio__main__works__field__box__img__url"
+          .portfolio__main__works__field__box__title
+            フリーマーケットアプリ
+        .portfolio__main__works__field__box
+          .portfolio__main__works__field__box__img
+            = image_tag "saaaaving.png", class: "portfolio__main__works__field__box__img__url"
+          .portfolio__main__works__field__box__title
+            貯金アプリ
+        .portfolio__main__works__field__box
+          .portfolio__main__works__field__box__img
+            = image_tag "working.jpg", class: "portfolio__main__works__field__box__img__url"
+          .portfolio__main__works__field__box__title
+            ブログアプリ作成中
+  %footer.portfolio__footer
+    .portfolio__footer__box
+      .portfolio__footer__box__title
+        CONTACT
+      .portfolio__footer__box__mail
+        yuichiro.o0209@gmail.com
+      .portfolio__footer__box__or
+        or
+      .portfolio__footer__box__twitter
+        =link_to "https://twitter.com/yuichir43705457" do
+          %i.fab.fa-twitter-square.portfolio__footer__box__twitter__icon
