@@ -25,6 +25,9 @@
         list-style: none;
         font-size: 30px;
         color: #FFF;
+        &__title {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -164,6 +167,65 @@
         &__icon {
           font-size: 50px;
           color: #FFF;
+        }
+      }
+    }
+  }
+  .detail-portfolio {
+    display: none;
+  }
+  .detail-freemarket {
+    display: none;
+  }
+  .detail-saaaaving {
+    display: none;
+  }
+  .detail-myblog {
+    display: none;
+  }
+  &__detail {
+    background-color: #dcdcdc;
+    margin-top: 50px;
+    &__title {
+      text-align: center;
+      font-size: 40px;
+      padding-top: 20px;
+    }
+    &__box {
+      padding: 20px 10vw 20px;
+      &__url {
+        padding-bottom: 20px;
+        display: flex;
+        border-bottom: 1px solid #c0c0c0;
+        &__cord {
+          padding-left: 20vw;
+        }
+      }
+      &__source {
+        padding-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        border-bottom: 1px solid #c0c0c0;
+        &__cord {
+          padding-left: 15.7vw;
+        }
+      }
+      &__description {
+        padding-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        border-bottom: 1px solid #c0c0c0;
+        &__cord {
+          padding-left: 20vw;
+        }
+      }
+      &__skill {
+        padding-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        border-bottom: 1px solid #c0c0c0;
+        &__cord {
+          padding-left: 15.7vw;
         }
       }
     }

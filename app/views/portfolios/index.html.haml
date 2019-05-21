@@ -4,13 +4,13 @@
       Yuichiro Onuki's portfolio
     %nav.portfolio__header__nav
       %ul.portfolio__header__nav__list
-        %li.portfolio__header__nav__list__profile
+        %li.portfolio__header__nav__list__title.profile
           profile
-        %li.portfolio__header__nav__list__skill
+        %li.portfolio__header__nav__list__title.skill
           skill
-        %li.portfolio__header__nav__list__works
+        %li.portfolio__header__nav__list__title.works
           works
-        %li.portfolio__header__nav__list__contact
+        %li.portfolio__header__nav__list__title.contact
           contact
   %main.portfolio__main
     .portfolio__main__profile
@@ -145,26 +145,144 @@
       %h2.portfolio__main__works__title
         works
       .portfolio__main__works__field
-        .portfolio__main__works__field__box
+        .portfolio__main__works__field__box.portfolio-image
           .portfolio__main__works__field__box__img
             = image_tag "portfolio.jpg", class: "portfolio__main__works__field__box__img__url"
           .portfolio__main__works__field__box__title
             ポートフォリオ
-        .portfolio__main__works__field__box
+        .portfolio__main__works__field__box.freemarket-image
           .portfolio__main__works__field__box__img
             = image_tag "freemarket.png", class: "portfolio__main__works__field__box__img__url"
           .portfolio__main__works__field__box__title
             フリーマーケットアプリ
-        .portfolio__main__works__field__box
+        .portfolio__main__works__field__box.saaaaving-image
           .portfolio__main__works__field__box__img
             = image_tag "saaaaving.png", class: "portfolio__main__works__field__box__img__url"
           .portfolio__main__works__field__box__title
             貯金アプリ
-        .portfolio__main__works__field__box
+        .portfolio__main__works__field__box.myblog-image
           .portfolio__main__works__field__box__img
             = image_tag "working.jpg", class: "portfolio__main__works__field__box__img__url"
           .portfolio__main__works__field__box__title
             ブログアプリ作成中
+  .portfolio__detail.detail-portfolio
+    .portfolio__detail__title
+      Portfolio site
+    .portfolio__detail__box
+      .portfolio__detail__box__url
+        .portfolio__detail__box__url__title
+          URL :
+        .portfolio__detail__box__url__cord
+          = link_to "http://portfolio", "http://portfolio" 
+      .portfolio__detail__box__source
+        .portfolio__detail__box__source__title
+          ソースコード :
+        .portfolio__detail__box__source__cord
+          = link_to "https://github.com/YUICHIROONUKI/portfolio", "https://github.com/YUICHIROONUKI/portfolio"
+      .portfolio__detail__box__description
+        .portfolio__detail__box__description__title
+          説明 :
+        .portfolio__detail__box__description__cord
+          このサイトです。ビューに関してはhaml、sassで書いてます。
+          %br
+          メニューをクリックした時のスクロールなどに関してはjqueryを使って書いてます。
+      .portfolio__detail__box__skill
+        .portfolio__detail__box__skill__title
+          使用した技術 :
+        .portfolio__detail__box__skill__cord
+          RubyonRails・haml・sass・jquery
+  .portfolio__detail.detail-freemarket
+    .portfolio__detail__title
+      フリーマーケットアプリ
+    .portfolio__detail__box
+      .portfolio__detail__box__url
+        .portfolio__detail__box__url__title
+          URL :
+        .portfolio__detail__box__url__cord
+          =link_to "http://13.115.88.33/", "http://13.115.88.33/" 
+      .portfolio__detail__box__source
+        .portfolio__detail__box__source__title
+          ソースコード :
+        .portfolio__detail__box__source__cord
+          = link_to "https://github.com/YUICHIROONUKI/freemarket_sample_49c", "https://github.com/YUICHIROONUKI/freemarket_sample_49c"
+      .portfolio__detail__box__description
+        .portfolio__detail__box__description__title
+          説明 :
+        .portfolio__detail__box__description__cord
+          5人で共同開発をした商品の出品や購入ができるフリーマーケットアプリです。
+          %br
+          スクラムマスターを務め、メンバーのタスク管理を行いました。
+          %br
+          実装箇所としてはフロントエンドが商品詳細ページ、ユーザー新規登録ページ、商品検索一覧ページです。
+          %br
+          サーバーサイドがユーザー新規登録・ログイン、クレジット登録・決済、sns認証、商品検索、
+          %br
+          AWSによるデプロイ、データベース設計、非同期通信によるコメント機能・recaptcha
+          %br
+          開発期間は約三週間です。
+      .portfolio__detail__box__skill
+        .portfolio__detail__box__skill__title
+          使用した技術 :
+        .portfolio__detail__box__skill__cord
+          RubyonRails・haml・sass・jquery・payjp・AWS・facebookdevelopper・recaptcha・MySQL
+  .portfolio__detail.detail-saaaaving
+    .portfolio__detail__title
+      貯金アプリ
+    .portfolio__detail__box
+      .portfolio__detail__box__url
+        .portfolio__detail__box__url__title
+          URL :
+        .portfolio__detail__box__url__cord
+          = link_to "http://saaaving.herokuapp.com/", "http://saaaving.herokuapp.com/" 
+      .portfolio__detail__box__source
+        .portfolio__detail__box__source__title
+          ソースコード :
+        .portfolio__detail__box__source__cord
+          = link_to "https://github.com/YUICHIROONUKI/saaaaving", "https://github.com/YUICHIROONUKI/saaaaving"
+      .portfolio__detail__box__description
+        .portfolio__detail__box__description__title
+          説明 :
+        .portfolio__detail__box__description__cord
+          貯金額をリアルタイムで表示するアプリです。
+          %br
+          ユーザーの平均月給、目標金額、目標到達日を設定し到達日までのタイムリミット、
+          %br
+          平均月給から計算した毎秒の貯蓄を表示します。
+          %br
+          また現在の貯蓄額のリアルタイムチャートも導入しております。
+          %br
+          開発期間は一週間です。
+      .portfolio__detail__box__skill
+        .portfolio__detail__box__skill__title
+          使用した技術 :
+        .portfolio__detail__box__skill__cord
+          RubyonRails・haml・sass・jquery・chart.js
+  .portfolio__detail.detail-myblog
+    .portfolio__detail__title
+      ブログアプリ
+    .portfolio__detail__box
+      .portfolio__detail__box__url
+        .portfolio__detail__box__url__title
+          URL :
+        .portfolio__detail__box__url__cord
+          -# = link_to "http://saaaving.herokuapp.com/", "http://saaaving.herokuapp.com/"
+      .portfolio__detail__box__source
+        .portfolio__detail__box__source__title
+          ソースコード :
+        .portfolio__detail__box__source__cord
+          = link_to "https://github.com/YUICHIROONUKI/myblog", "https://github.com/YUICHIROONUKI/myblog"
+      .portfolio__detail__box__description
+        .portfolio__detail__box__description__title
+          説明 :
+        .portfolio__detail__box__description__cord
+          ユーザー登録・ログイン、記事の投稿、編集、閲覧、削除、詳細表示の機能を実装しました。
+          %br
+          開発期間は４日です。
+      .portfolio__detail__box__skill
+        .portfolio__detail__box__skill__title
+          使用した技術 :
+        .portfolio__detail__box__skill__cord
+          RubyonRails・haml・sass
   %footer.portfolio__footer
     .portfolio__footer__box
       .portfolio__footer__box__title
