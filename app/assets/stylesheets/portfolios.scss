@@ -88,10 +88,14 @@
           &__lang {
             width: 15vw;
             display: inline-block;
+            vertical-align: top;
             font-size: 20px;
             margin: 5vh 0;
             &__list {
               line-height: 10vh;
+            }
+            &__list-ruby {
+              line-height: 4vh;
             }
           }
           &__period {
@@ -101,6 +105,9 @@
             margin-top: 5vh;
             &__list {
               line-height: 10vh;
+            }
+            &__list-ruby {
+              line-height: 5vh;
             }
           }
         }
