@@ -69,3 +69,5 @@ gem 'pry-doc'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
